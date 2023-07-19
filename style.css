@@ -303,11 +303,11 @@ main {
     align-items: center;
     gap: 100px;
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 80px;
 }
 
 .play-container {
-    width: 50%;
+    width: 50%;    
 }
 
 .play-title {
@@ -323,16 +323,59 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .play-des {
     color: #534C64;
     text-align: right;    
     font-size: 1.1rem;   
     font-weight: 400;
-    line-height: 30px;
-    
+    line-height: 30px;    
 }
 
 .play-img img {
     width: 100%;
+    padding-left: 20px;
+    /* padding-right: 20px; */
+    margin-left: 50px;
+    position: relative;
+   
+}
+.play-small-img{
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    padding: 40px;
+    right: 130px;
+  
+}
+.play-small-img img{
+    width: 50%;
+    height: 280px;  
+    position: absolute;
+    left: 0px;      
+    right: 220px;
+    top: 10px;    
+}
+/* new games name */
+.all-games-name{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-area: auto;
+    gap: 25px;
+}
+.games-name-container {
+    display: flex;    
+    justify-content: center;    
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.new-games-img img{
+    width: 50%;
+    /* height: 80%; */
+}
+.games-name-container:hover{
+    color: #FF42A5;
+    border: 1px solid #FF42A5;
+    border-radius: 30px;
+    padding: 10px 0px;   
 }
