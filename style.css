@@ -212,6 +212,11 @@ main {
     line-height: 45px;
 }
 
+/* online games section start */
+.online-games {
+    margin-bottom: 70px;
+}
+
 .online-games-info {
     text-align: center;
     margin: 50px 0px;
@@ -232,15 +237,11 @@ main {
     line-height: 30px;
 }
 
+/*  */
 .online-all-img {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.online-img-info {
-    border: 1px solid black;
-
 }
 
 .online-img img {
@@ -248,16 +249,90 @@ main {
     height: 250px;
 }
 
+.online-img {
+    position: relative;
+    transform: translate(-50% -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF42A5;
+    text-align: center;
+}
+
+.online-img:hover .overlay {
+    opacity: 0.8;
+}
+
+.overlay-content li {
+    list-style: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
 .online-img-des {
-    padding-top: 20px ; 
     padding-bottom: 15px;
     width: 250px;
-    color: #534C64; 
-    font-size: 1.1rem;   
+    color: #534C64;
+    font-size: 1.1rem;
     font-weight: 500;
-    line-height: 30px; 
-     
+    line-height: 30px;
 }
-#thrid-img{
-    background-image: url("/images/Rectangle\ 7.png");
+
+/* pay container start */
+.play {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.play-container {
+    width: 50%;
+}
+
+.play-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.play-pink-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-des {
+    color: #534C64;
+    text-align: right;    
+    font-size: 1.1rem;   
+    font-weight: 400;
+    line-height: 30px;
+    
+}
+
+.play-img img {
+    width: 100%;
 }
